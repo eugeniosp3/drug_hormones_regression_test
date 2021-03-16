@@ -1,0 +1,56 @@
+
+Please put together your answers to your questions in a single write up document
+ (PDF format). You may answer the questions in descriptive sentences, pseudo-code,
+ hand-sketched diagrams that are scanned into the document, or however else you feel
+ would be the most appropriate way to express your answers. 
+
+
+"1. We have a product called Drug 390 for breast cancer treatment and our team is interested in understanding 
+how long patients are on treatment when they are taking our product compared to the generic. For additional 
+context, breast cancer patients can fall into four categories based on their HER2 status (0 or 1) or their 
+Hormone Receptor (HR) status (0 or 1) so we are also interested in understanding how the cancer category 
+might impact length of treatment as well. 
+
+We have provided sample datasets found on the green tabs: 'Patient_Drug390_Test_Flags' which tracks 
+whether a patient received Drug 390 and their Breat Cancer Category, and  'Patient_Drug_Admin_Date' 
+which marks the drug administration dates for each patient. 
+
+
+"
+"a. Describe how you would compute the length of treatment for each patient - Done
+
+b. Describe or show how you might go about comparing the length of treatment by drug 390 vs. the generic 
+(i.e. through a visualization, descriptive analytics, statistical tests, or machine learning)  
+
+c. Describe or show how you might go about comparing the length of treatment by drug 390 vs. the generic
+ by HR/HER2 status patients. (i.e. through a visualization, descriptive analytics, or other statistical methods, 
+statistical tests, or machine learning)
+
+d. Please create a mock up slide or dashboard that best shows the results of the comparisons you have done 
+in b) and c). Optional: Use the sample data to generate the analyses that you put into this mock up slide or dashboard"
+
+
+
+
+
+------------------------------------------------------
+Field Name	Description
+Patient_ID	Patient ID
+drug_390_admin_flag	Flag if patient has been given Drug 390 (1 = Yes, 0 = No)
+ER_positive	Flag if patient is ER positive*
+PR_positive	Flag if patient is PR positive*
+HER2_positive	Flag if patient is HER2 positive*
+
+
+* Note that patients with breast cancer can be categorized into 4 categories,
+ based on their HER2 status and hormone receptor status
+ (hormone receptor positive is anyone who is either ER or PR positive whereas
+ hormone receptor negative is anyone who is both ER and PR negative).
+----------------------------------------------------
+
+Patient Drug Admin Date
+
+
+Field Name	Description
+Patient_ID	Patient ID
+Drug_admin_date	Date of drug administration
